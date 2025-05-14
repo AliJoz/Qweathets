@@ -30,9 +30,9 @@ function Container() {
   />
       <Text className="text-zinc-900 text-xl font-extrabold mt-2">کیو ودر </Text>
 </View>
-<View >
-  <DaySvg width={100} height={100} fill="#FFA500" />
-  <Text className="text-zinc-700 text-4xl font-normal mr-1 mt-9">28.2</Text>
+<View className="flex-row mr-6 mt-5 justify-center items-center" >
+  <DaySvg width={80} height={100} fill="#FFA500" />
+  <Text className="text-zinc-700 text-4xl font-normal  ">28.2</Text>
 
 </View>
 

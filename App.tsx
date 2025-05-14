@@ -2,6 +2,7 @@
 import { View, SafeAreaView } from 'react-native';
 import React from 'react';
 import ModuleName from './components/Container';
+import Weathers from './components/weathers';
 
 import './global.css';
 
@@ -26,6 +27,8 @@ export default function App() {
           <View className='px-1'> 
 
         <ModuleName />
+        <Weathers />
+
           </View>
         </View>
  
