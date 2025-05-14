@@ -1,5 +1,5 @@
 // components/WelcomeCard.tsx
-import { View, Text } from 'react-native';
+import { View, SafeAreaView } from 'react-native';
 import React from 'react';
 import ModuleName from './components/Container';
 
@@ -8,11 +8,27 @@ import './global.css';
 export default function App() {
   return (
     <>
-      <View className="m-4 rounded-2xl bg-white p-5 shadow-lg">
-        <Text className="text-xl font-bold text-gray-800">سلام 👋</Text>
-        <Text className="mt-2 text-base text-gray-600">به اپلیکیشن NativeWind خوش اومدی!</Text>
-      </View>
-      <ModuleName />
+    {/* فقط نوار بالا با SafeAreaView */}
+      <SafeAreaView className='bg-zinc-300 text-zinc-950'>
+        <View style={{ padding: 12 }}>
+          {/* <Text style={{ fontSize: 16, fontWeight: 'bold' }}>نوار بالایی من 😎</Text> */}
+        </View>
+      </SafeAreaView>
+     
+        <View className="bg-neutral-200  dark:bg-gray-800">
+          <View className="">
+            {/* محتوای اصلی */}
+
+            {/* <Text className='text-red-700'> snnnnnnnnnnnnnnnssh</Text> */}
+            {/* سایدبار و آیکون‌ها */}
+         
+          </View>
+          <View className='px-1'> 
+
+        <ModuleName />
+          </View>
+        </View>
+ 
     </>
   );
 }
